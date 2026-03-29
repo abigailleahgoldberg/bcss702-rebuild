@@ -1,5 +1,6 @@
 {
   "framework": null,
+  "installCommand": "echo skip",
   "buildCommand": "mkdir -p .vercel/output/static && cp index.html .vercel/output/static/index.html && echo '{\"version\": 3}' > .vercel/output/config.json",
   "outputDirectory": ".vercel/output"
 }

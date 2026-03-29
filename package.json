@@ -1,8 +1,0 @@
-{
-  "name": "bcss702-preview",
-  "version": "1.0.0",
-  "scripts": {
-    "build": "mkdir -p .output && cp index.html .output/index.html",
-    "start": "npx serve .output"
-  }
-}
