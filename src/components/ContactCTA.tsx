@@ -3,7 +3,7 @@ import { COMPANY } from "@/lib/constants";
 
 export default function ContactCTA() {
   return (
-    <section className="bg-navy-900 text-white py-16 sm:py-20">
+    <section className="bg-dark-900 text-white py-16 sm:py-20">
       <div className="max-w-4xl mx-auto px-4 text-center">
         <h2 className="text-2xl sm:text-3xl font-bold mb-4">
           Ready to Start Your Project?
@@ -16,13 +16,13 @@ export default function ContactCTA() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="/contact"
-            className="bg-gold-500 text-navy-900 px-8 py-3 rounded font-semibold hover:bg-gold-400 transition-colors"
+            className="bg-red-600 text-dark-900 px-8 py-3 rounded font-semibold hover:bg-red-500 transition-colors"
           >
             Get a Free Quote
           </Link>
           <a
             href={COMPANY.phoneHref}
-            className="border border-gold-500 text-gold-400 px-8 py-3 rounded font-semibold hover:bg-navy-800 transition-colors"
+            className="border border-red-600 text-red-500 px-8 py-3 rounded font-semibold hover:bg-red-700 transition-colors"
           >
             Call {COMPANY.phone}
           </a>

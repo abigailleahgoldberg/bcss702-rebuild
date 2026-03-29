@@ -39,16 +39,16 @@ export default function HomePage() {
       <LocalBusinessSchema />
 
       {/* Hero */}
-      <section className="relative bg-gradient-to-br from-navy-900 via-navy-800 to-charcoal text-white">
+      <section className="relative bg-gradient-to-br from-dark-900 via-dark-800 to-dark-900 text-white">
         <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(212,168,67,0.1)_0%,transparent_50%)]" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 lg:py-36">
           <div className="max-w-3xl">
-            <p className="text-gold-400 font-semibold text-sm uppercase tracking-wider mb-4">
+            <p className="text-red-500 font-semibold text-sm uppercase tracking-wider mb-4">
               Licensed &amp; Insured General Contractor
             </p>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-6">
               Las Vegas&apos;s Trusted{" "}
-              <span className="text-gold-400">General Contractor</span>
+              <span className="text-red-500">General Contractor</span>
             </h1>
             <p className="text-lg sm:text-xl text-slate-300 mb-8 max-w-2xl leading-relaxed">
               Residential and commercial remodeling backed by decades of
@@ -58,7 +58,7 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="/contact"
-                className="bg-gold-500 text-navy-900 px-8 py-4 rounded font-bold text-lg hover:bg-gold-400 transition-colors text-center"
+                className="bg-red-600 text-dark-900 px-8 py-4 rounded font-bold text-lg hover:bg-red-500 transition-colors text-center"
               >
                 Get a Free Quote
               </Link>
@@ -84,7 +84,7 @@ export default function HomePage() {
               { label: "Satisfaction", value: "Guaranteed" },
             ].map((badge) => (
               <div key={badge.label}>
-                <p className="text-gold-500 font-bold text-xl sm:text-2xl">
+                <p className="text-red-600 font-bold text-xl sm:text-2xl">
                   {badge.value}
                 </p>
                 <p className="text-slate-600 text-sm mt-1">{badge.label}</p>
@@ -98,7 +98,7 @@ export default function HomePage() {
       <section className="py-16 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-2xl sm:text-3xl font-bold text-navy-900 mb-4">
+            <h2 className="text-2xl sm:text-3xl font-bold text-dark-900 mb-4">
               Our Services
             </h2>
             <p className="text-slate-600 max-w-2xl mx-auto">
@@ -112,10 +112,10 @@ export default function HomePage() {
               <Link
                 key={service.slug}
                 href={`/services/${service.slug}`}
-                className="group bg-white border border-slate-200 rounded-lg p-6 hover:border-gold-500 hover:shadow-lg transition-all"
+                className="group bg-white border border-slate-200 rounded-lg p-6 hover:border-red-600 hover:shadow-lg transition-all"
               >
                 <span className="text-3xl mb-4 block">{service.icon}</span>
-                <h3 className="text-lg font-semibold text-navy-900 mb-2 group-hover:text-gold-500 transition-colors">
+                <h3 className="text-lg font-semibold text-dark-900 mb-2 group-hover:text-red-600 transition-colors">
                   {service.title}
                 </h3>
                 <p className="text-slate-600 text-sm leading-relaxed">
@@ -131,7 +131,7 @@ export default function HomePage() {
       <section className="bg-slate-100 py-16 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-2xl sm:text-3xl font-bold text-navy-900 mb-4">
+            <h2 className="text-2xl sm:text-3xl font-bold text-dark-900 mb-4">
               Our Recent Projects
             </h2>
             <p className="text-slate-600 max-w-2xl mx-auto">
@@ -149,13 +149,13 @@ export default function HomePage() {
               "Design-Build Custom Home — Las Vegas",
             ].map((project, i) => (
               <div key={i} className="rounded-lg overflow-hidden">
-                <div className="aspect-[4/3] bg-gradient-to-br from-navy-700 to-navy-900 flex items-center justify-center">
+                <div className="aspect-[4/3] bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
                   <span className="text-slate-400 text-sm font-medium px-4 text-center">
                     Project Photo
                   </span>
                 </div>
                 <div className="bg-white p-4">
-                  <p className="font-semibold text-navy-900 text-sm">
+                  <p className="font-semibold text-dark-900 text-sm">
                     {project}
                   </p>
                 </div>
@@ -169,7 +169,7 @@ export default function HomePage() {
       <section className="py-16 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-2xl sm:text-3xl font-bold text-navy-900 mb-4">
+            <h2 className="text-2xl sm:text-3xl font-bold text-dark-900 mb-4">
               What Our Clients Say
             </h2>
           </div>
@@ -177,7 +177,7 @@ export default function HomePage() {
             <div className="bg-white border border-slate-200 rounded-lg p-6 shadow-sm">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <svg key={i} className="w-5 h-5 text-gold-500" fill="currentColor" viewBox="0 0 20 20">
+                  <svg key={i} className="w-5 h-5 text-red-600" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
                 ))}
@@ -197,7 +197,7 @@ export default function HomePage() {
             <div className="bg-white border border-slate-200 rounded-lg p-6 shadow-sm">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <svg key={i} className="w-5 h-5 text-gold-500" fill="currentColor" viewBox="0 0 20 20">
+                  <svg key={i} className="w-5 h-5 text-red-600" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
                 ))}
@@ -216,7 +216,7 @@ export default function HomePage() {
             <div className="bg-white border border-slate-200 rounded-lg p-6 shadow-sm">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <svg key={i} className="w-5 h-5 text-gold-500" fill="currentColor" viewBox="0 0 20 20">
+                  <svg key={i} className="w-5 h-5 text-red-600" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
                 ))}

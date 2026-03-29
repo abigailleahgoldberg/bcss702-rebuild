@@ -41,7 +41,7 @@ export default async function BlogPostPage({ params }: PageProps) {
           {/* Back Link */}
           <Link
             href="/blog"
-            className="text-gold-500 hover:text-gold-400 transition-colors text-sm font-semibold mb-8 inline-block"
+            className="text-red-600 hover:text-red-500 transition-colors text-sm font-semibold mb-8 inline-block"
           >
             &larr; Back to Blog
           </Link>
@@ -58,7 +58,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                 day: "numeric",
               })}
             </time>
-            <h1 className="text-3xl sm:text-4xl font-bold text-navy-900 leading-tight">
+            <h1 className="text-3xl sm:text-4xl font-bold text-dark-900 leading-tight">
               {post.title}
             </h1>
           </header>
@@ -80,7 +80,7 @@ export default async function BlogPostPage({ params }: PageProps) {
       {/* Related Posts */}
       <section className="bg-slate-100 py-16 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl sm:text-3xl font-bold text-navy-900 mb-8 text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold text-dark-900 mb-8 text-center">
             Related Articles
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
@@ -88,9 +88,9 @@ export default async function BlogPostPage({ params }: PageProps) {
               <Link
                 key={related.slug}
                 href={`/blog/${related.slug}`}
-                className="group bg-white border border-slate-200 rounded-lg overflow-hidden hover:border-gold-500 hover:shadow-lg transition-all"
+                className="group bg-white border border-slate-200 rounded-lg overflow-hidden hover:border-red-600 hover:shadow-lg transition-all"
               >
-                <div className="aspect-[16/9] bg-gradient-to-br from-navy-700 to-navy-900 flex items-center justify-center">
+                <div className="aspect-[16/9] bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
                   <span className="text-slate-400 text-sm font-medium">
                     Blog Image
                   </span>
@@ -106,7 +106,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                       day: "numeric",
                     })}
                   </time>
-                  <h3 className="text-base font-semibold text-navy-900 group-hover:text-gold-500 transition-colors">
+                  <h3 className="text-base font-semibold text-dark-900 group-hover:text-red-600 transition-colors">
                     {related.title}
                   </h3>
                 </div>

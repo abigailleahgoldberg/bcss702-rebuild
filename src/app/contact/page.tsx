@@ -12,16 +12,16 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-gradient-to-br from-navy-900 via-navy-800 to-navy-700 text-white">
+      <section className="relative bg-gradient-to-br from-dark-900 via-dark-800 to-dark-700 text-white">
         <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(212,168,67,0.1)_0%,transparent_50%)]" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28">
           <div className="max-w-3xl">
-            <p className="text-gold-400 font-semibold text-sm uppercase tracking-wider mb-4">
+            <p className="text-red-500 font-semibold text-sm uppercase tracking-wider mb-4">
               Contact Us
             </p>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6">
               Let&apos;s Talk About{" "}
-              <span className="text-gold-400">Your Project</span>
+              <span className="text-red-500">Your Project</span>
             </h1>
             <p className="text-lg sm:text-xl text-slate-300 leading-relaxed">
               Ready to get started? Reach out for a free, no-obligation quote.
@@ -37,7 +37,7 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16">
             {/* Form */}
             <div className="lg:col-span-3">
-              <h2 className="text-2xl font-bold text-navy-900 mb-6">
+              <h2 className="text-2xl font-bold text-dark-900 mb-6">
                 Send Us a Message
               </h2>
               <ContactForm />
@@ -45,15 +45,15 @@ export default function ContactPage() {
 
             {/* Contact Info */}
             <div className="lg:col-span-2">
-              <h2 className="text-2xl font-bold text-navy-900 mb-6">
+              <h2 className="text-2xl font-bold text-dark-900 mb-6">
                 Get in Touch
               </h2>
               <div className="space-y-6">
                 {/* Phone */}
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-navy-900 rounded-full flex items-center justify-center shrink-0">
+                  <div className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center shrink-0">
                     <svg
-                      className="w-5 h-5 text-gold-400"
+                      className="w-5 h-5 text-red-500"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -72,7 +72,7 @@ export default function ContactPage() {
                     </p>
                     <a
                       href={COMPANY.phoneHref}
-                      className="text-navy-900 font-semibold hover:text-gold-500 transition-colors"
+                      className="text-dark-900 font-semibold hover:text-red-600 transition-colors"
                     >
                       {COMPANY.phone}
                     </a>
@@ -81,9 +81,9 @@ export default function ContactPage() {
 
                 {/* Email */}
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-navy-900 rounded-full flex items-center justify-center shrink-0">
+                  <div className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center shrink-0">
                     <svg
-                      className="w-5 h-5 text-gold-400"
+                      className="w-5 h-5 text-red-500"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -102,7 +102,7 @@ export default function ContactPage() {
                     </p>
                     <a
                       href={`mailto:${COMPANY.email}`}
-                      className="text-navy-900 font-semibold hover:text-gold-500 transition-colors"
+                      className="text-dark-900 font-semibold hover:text-red-600 transition-colors"
                     >
                       {COMPANY.email}
                     </a>
@@ -111,9 +111,9 @@ export default function ContactPage() {
 
                 {/* Location */}
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-navy-900 rounded-full flex items-center justify-center shrink-0">
+                  <div className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center shrink-0">
                     <svg
-                      className="w-5 h-5 text-gold-400"
+                      className="w-5 h-5 text-red-500"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -136,7 +136,7 @@ export default function ContactPage() {
                     <p className="text-sm font-medium text-slate-500 mb-1">
                       Location
                     </p>
-                    <p className="text-navy-900 font-semibold">
+                    <p className="text-dark-900 font-semibold">
                       {COMPANY.location}
                     </p>
                   </div>
@@ -144,9 +144,9 @@ export default function ContactPage() {
 
                 {/* Facebook */}
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-navy-900 rounded-full flex items-center justify-center shrink-0">
+                  <div className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center shrink-0">
                     <svg
-                      className="w-5 h-5 text-gold-400"
+                      className="w-5 h-5 text-red-500"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                     >
@@ -161,7 +161,7 @@ export default function ContactPage() {
                       href={COMPANY.facebook}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-navy-900 font-semibold hover:text-gold-500 transition-colors"
+                      className="text-dark-900 font-semibold hover:text-red-600 transition-colors"
                     >
                       Follow us on Facebook
                     </a>
@@ -172,7 +172,7 @@ export default function ContactPage() {
                 <div className="bg-slate-100 rounded-lg p-5 mt-8">
                   <div className="flex items-start gap-3">
                     <svg
-                      className="w-6 h-6 text-gold-500 shrink-0 mt-0.5"
+                      className="w-6 h-6 text-red-600 shrink-0 mt-0.5"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -185,14 +185,14 @@ export default function ContactPage() {
                       />
                     </svg>
                     <div>
-                      <p className="font-semibold text-navy-900 text-sm">
+                      <p className="font-semibold text-dark-900 text-sm">
                         We respond within 1 business day
                       </p>
                       <p className="text-slate-600 text-sm mt-1">
                         For urgent requests, call us directly at{" "}
                         <a
                           href={COMPANY.phoneHref}
-                          className="text-gold-500 font-medium hover:underline"
+                          className="text-red-600 font-medium hover:underline"
                         >
                           {COMPANY.phone}
                         </a>

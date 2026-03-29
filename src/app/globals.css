@@ -1,29 +1,32 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-navy-900: #0f1a2e;
-  --color-navy-800: #162036;
-  --color-navy-700: #1e2d4a;
-  --color-navy-600: #2a3f5f;
-  --color-charcoal: #1a1a2e;
-  --color-gold-500: #d4a843;
-  --color-gold-400: #e4bc5e;
-  --color-gold-300: #f0d078;
-  --color-slate-100: #f1f5f9;
-  --color-slate-200: #e2e8f0;
-  --color-slate-300: #cbd5e1;
-  --color-slate-400: #94a3b8;
-  --color-slate-500: #64748b;
-  --color-slate-600: #475569;
-  --color-slate-700: #334155;
-  --color-slate-800: #1e293b;
+  --color-red-700: #CC1939;
+  --color-red-600: #DD183B;
+  --color-red-500: #E82040;
+  --color-red-400: #F04060;
+  --color-red-100: #FFEDE6;
+  --color-red-50: #FFF5F2;
+  --color-dark-900: #0F172A;
+  --color-dark-800: #140609;
+  --color-dark-700: #1e293b;
+  --color-gray-800: #222222;
+  --color-gray-700: #3A3A3A;
+  --color-gray-600: #475569;
+  --color-gray-500: #64748b;
+  --color-gray-400: #94a3b8;
+  --color-gray-300: #cbd5e1;
+  --color-gray-200: #e2e8f0;
+  --color-gray-100: #f1f5f9;
+  --color-gray-50: #f8fafc;
   --color-white: #ffffff;
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Roboto", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Roboto Slab", ui-serif, Georgia, serif;
 }
 
 body {
   background: var(--color-white);
-  color: var(--color-slate-800);
+  color: var(--color-gray-800);
   font-family: var(--font-sans);
 }
 

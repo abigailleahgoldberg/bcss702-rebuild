@@ -16,9 +16,9 @@ export default function KitchenRemodelingPage() {
   return (
     <main>
       {/* Hero */}
-      <section className="bg-gradient-to-b from-navy-900 to-navy-800 text-white py-20 sm:py-28">
+      <section className="bg-gradient-to-b from-dark-900 to-dark-800 text-white py-20 sm:py-28">
         <div className="max-w-6xl mx-auto px-4 text-center">
-          <p className="text-gold-400 font-semibold mb-3 uppercase tracking-wide text-sm">
+          <p className="text-red-500 font-semibold mb-3 uppercase tracking-wide text-sm">
             Our Services
           </p>
           <h1 className="text-4xl sm:text-5xl font-bold mb-6">
@@ -37,7 +37,7 @@ export default function KitchenRemodelingPage() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
-              <h2 className="text-3xl font-bold text-navy-900 mb-6">
+              <h2 className="text-3xl font-bold text-dark-900 mb-6">
                 Beautiful Kitchens Built to Last
               </h2>
               <p className="text-slate-600 mb-6 leading-relaxed">
@@ -49,46 +49,46 @@ export default function KitchenRemodelingPage() {
                 kitchen enhances both your daily life and your home&apos;s
                 value.
               </p>
-              <h3 className="text-xl font-bold text-navy-900 mb-4">
+              <h3 className="text-xl font-bold text-dark-900 mb-4">
                 What Our Kitchen Remodeling Includes
               </h3>
               <ul className="space-y-3 text-slate-600 mb-8">
                 <li className="flex items-start gap-3">
-                  <span className="text-gold-500 mt-1 font-bold">&#10003;</span>
+                  <span className="text-red-600 mt-1 font-bold">&#10003;</span>
                   Custom cabinetry — shaker, flat-panel, and modern designs
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-gold-500 mt-1 font-bold">&#10003;</span>
+                  <span className="text-red-600 mt-1 font-bold">&#10003;</span>
                   Countertop installation — quartz, granite, marble, and butcher
                   block
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-gold-500 mt-1 font-bold">&#10003;</span>
+                  <span className="text-red-600 mt-1 font-bold">&#10003;</span>
                   Tile and stone backsplash design and installation
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-gold-500 mt-1 font-bold">&#10003;</span>
+                  <span className="text-red-600 mt-1 font-bold">&#10003;</span>
                   Kitchen island construction and reconfiguration
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-gold-500 mt-1 font-bold">&#10003;</span>
+                  <span className="text-red-600 mt-1 font-bold">&#10003;</span>
                   Sink, faucet, and garbage disposal upgrades
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-gold-500 mt-1 font-bold">&#10003;</span>
+                  <span className="text-red-600 mt-1 font-bold">&#10003;</span>
                   Under-cabinet and recessed lighting
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-gold-500 mt-1 font-bold">&#10003;</span>
+                  <span className="text-red-600 mt-1 font-bold">&#10003;</span>
                   Flooring — tile, luxury vinyl plank, and hardwood
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-gold-500 mt-1 font-bold">&#10003;</span>
+                  <span className="text-red-600 mt-1 font-bold">&#10003;</span>
                   Electrical and plumbing updates to support new layouts
                 </li>
               </ul>
 
-              <h3 className="text-xl font-bold text-navy-900 mb-4">
+              <h3 className="text-xl font-bold text-dark-900 mb-4">
                 Why Choose {COMPANY.shortName}?
               </h3>
               <p className="text-slate-600 leading-relaxed">
@@ -102,10 +102,10 @@ export default function KitchenRemodelingPage() {
             </div>
 
             <div className="space-y-6">
-              <div className="aspect-[4/3] bg-gradient-to-br from-navy-700 to-navy-900 flex items-center justify-center rounded-lg">
+              <div className="aspect-[4/3] bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center rounded-lg">
                 <span className="text-slate-400 text-sm">Project Photo</span>
               </div>
-              <div className="aspect-[4/3] bg-gradient-to-br from-navy-700 to-navy-900 flex items-center justify-center rounded-lg">
+              <div className="aspect-[4/3] bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center rounded-lg">
                 <span className="text-slate-400 text-sm">Project Photo</span>
               </div>
             </div>
@@ -116,7 +116,7 @@ export default function KitchenRemodelingPage() {
       {/* Related Services */}
       <section className="py-16 sm:py-20 bg-slate-100">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-2xl font-bold text-navy-900 mb-8 text-center">
+          <h2 className="text-2xl font-bold text-dark-900 mb-8 text-center">
             Related Services
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
@@ -124,12 +124,12 @@ export default function KitchenRemodelingPage() {
               <Link
                 key={service.slug}
                 href={`/services/${service.slug}`}
-                className="group block bg-white rounded-lg p-6 hover:shadow-lg transition-shadow border border-slate-200 hover:border-gold-500"
+                className="group block bg-white rounded-lg p-6 hover:shadow-lg transition-shadow border border-slate-200 hover:border-red-600"
               >
                 <span className="text-3xl block mb-3" aria-hidden="true">
                   {service.icon}
                 </span>
-                <h3 className="text-lg font-bold text-navy-900 group-hover:text-gold-500 transition-colors mb-2">
+                <h3 className="text-lg font-bold text-dark-900 group-hover:text-red-600 transition-colors mb-2">
                   {service.title}
                 </h3>
                 <p className="text-slate-600 text-sm">{service.description}</p>

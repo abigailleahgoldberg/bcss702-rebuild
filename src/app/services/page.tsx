@@ -12,7 +12,7 @@ export default function ServicesPage() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-navy-900 to-navy-800 text-white py-20 sm:py-28">
+      <section className="bg-gradient-to-b from-dark-900 to-dark-800 text-white py-20 sm:py-28">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6">
             Our Construction Services
@@ -33,16 +33,16 @@ export default function ServicesPage() {
               <Link
                 key={service.slug}
                 href={`/services/${service.slug}`}
-                className="group block bg-slate-100 rounded-lg p-8 hover:shadow-lg transition-shadow border border-slate-200 hover:border-gold-500"
+                className="group block bg-slate-100 rounded-lg p-8 hover:shadow-lg transition-shadow border border-slate-200 hover:border-red-600"
               >
                 <span className="text-4xl block mb-4" aria-hidden="true">
                   {service.icon}
                 </span>
-                <h2 className="text-xl font-bold text-navy-900 mb-3 group-hover:text-gold-500 transition-colors">
+                <h2 className="text-xl font-bold text-dark-900 mb-3 group-hover:text-red-600 transition-colors">
                   {service.title}
                 </h2>
                 <p className="text-slate-600 mb-4">{service.description}</p>
-                <span className="text-gold-500 font-semibold inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                <span className="text-red-600 font-semibold inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                   Learn More
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -68,12 +68,12 @@ export default function ServicesPage() {
       {/* Why Choose Us */}
       <section className="py-16 sm:py-20 bg-slate-100">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-navy-900 text-center mb-12">
+          <h2 className="text-3xl font-bold text-dark-900 text-center mb-12">
             Why Las Vegas Trusts {COMPANY.shortName}
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="text-gold-500 text-3xl font-bold mb-2">
+              <div className="text-red-600 text-3xl font-bold mb-2">
                 Licensed &amp; Insured
               </div>
               <p className="text-slate-600">
@@ -82,7 +82,7 @@ export default function ServicesPage() {
               </p>
             </div>
             <div className="text-center">
-              <div className="text-gold-500 text-3xl font-bold mb-2">
+              <div className="text-red-600 text-3xl font-bold mb-2">
                 Local Expertise
               </div>
               <p className="text-slate-600">
@@ -91,7 +91,7 @@ export default function ServicesPage() {
               </p>
             </div>
             <div className="text-center">
-              <div className="text-gold-500 text-3xl font-bold mb-2">
+              <div className="text-red-600 text-3xl font-bold mb-2">
                 Quality First
               </div>
               <p className="text-slate-600">

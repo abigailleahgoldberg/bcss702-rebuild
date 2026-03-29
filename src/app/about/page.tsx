@@ -34,16 +34,16 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-gradient-to-br from-navy-900 via-navy-800 to-navy-700 text-white">
+      <section className="relative bg-gradient-to-br from-dark-900 via-dark-800 to-dark-700 text-white">
         <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(212,168,67,0.1)_0%,transparent_50%)]" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28">
           <div className="max-w-3xl">
-            <p className="text-gold-400 font-semibold text-sm uppercase tracking-wider mb-4">
+            <p className="text-red-500 font-semibold text-sm uppercase tracking-wider mb-4">
               About {COMPANY.shortName}
             </p>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6">
               Built on Hard Work.{" "}
-              <span className="text-gold-400">Driven by Integrity.</span>
+              <span className="text-red-500">Driven by Integrity.</span>
             </h1>
             <p className="text-lg sm:text-xl text-slate-300 leading-relaxed">
               Family-owned and Las Vegas proud — {COMPANY.shortName} has been
@@ -58,10 +58,10 @@ export default function AboutPage() {
       <section className="py-16 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-2xl sm:text-3xl font-bold text-navy-900 mb-4">
+            <h2 className="text-2xl sm:text-3xl font-bold text-dark-900 mb-4">
               Our Story
             </h2>
-            <div className="w-16 h-1 bg-gold-500 mx-auto" />
+            <div className="w-16 h-1 bg-red-600 mx-auto" />
           </div>
           <div className="max-w-4xl mx-auto space-y-6 text-slate-700 leading-relaxed text-lg">
             <p>
@@ -94,7 +94,7 @@ export default function AboutPage() {
       <section className="bg-slate-100 py-16 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-2xl sm:text-3xl font-bold text-navy-900 mb-4">
+            <h2 className="text-2xl sm:text-3xl font-bold text-dark-900 mb-4">
               What We Stand For
             </h2>
             <p className="text-slate-600 max-w-2xl mx-auto">
@@ -108,7 +108,7 @@ export default function AboutPage() {
                 key={value.title}
                 className="bg-white border border-slate-200 rounded-lg p-6 shadow-sm"
               >
-                <h3 className="text-lg font-semibold text-navy-900 mb-2">
+                <h3 className="text-lg font-semibold text-dark-900 mb-2">
                   {value.title}
                 </h3>
                 <p className="text-slate-600 leading-relaxed">
@@ -124,16 +124,16 @@ export default function AboutPage() {
       <section className="py-16 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-2xl sm:text-3xl font-bold text-navy-900 mb-4">
+            <h2 className="text-2xl sm:text-3xl font-bold text-dark-900 mb-4">
               Why Las Vegas Trusts Us
             </h2>
-            <div className="w-16 h-1 bg-gold-500 mx-auto" />
+            <div className="w-16 h-1 bg-red-600 mx-auto" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <div className="text-center">
-              <div className="w-16 h-16 bg-navy-900 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg
-                  className="w-8 h-8 text-gold-400"
+                  className="w-8 h-8 text-red-500"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -146,7 +146,7 @@ export default function AboutPage() {
                   />
                 </svg>
               </div>
-              <h3 className="text-lg font-semibold text-navy-900 mb-2">
+              <h3 className="text-lg font-semibold text-dark-900 mb-2">
                 Licensed &amp; Insured
               </h3>
               <p className="text-slate-600 text-sm leading-relaxed">
@@ -155,9 +155,9 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-navy-900 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg
-                  className="w-8 h-8 text-gold-400"
+                  className="w-8 h-8 text-red-500"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -176,7 +176,7 @@ export default function AboutPage() {
                   />
                 </svg>
               </div>
-              <h3 className="text-lg font-semibold text-navy-900 mb-2">
+              <h3 className="text-lg font-semibold text-dark-900 mb-2">
                 Locally Owned
               </h3>
               <p className="text-slate-600 text-sm leading-relaxed">
@@ -185,9 +185,9 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-navy-900 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg
-                  className="w-8 h-8 text-gold-400"
+                  className="w-8 h-8 text-red-500"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -200,7 +200,7 @@ export default function AboutPage() {
                   />
                 </svg>
               </div>
-              <h3 className="text-lg font-semibold text-navy-900 mb-2">
+              <h3 className="text-lg font-semibold text-dark-900 mb-2">
                 Decades of Experience
               </h3>
               <p className="text-slate-600 text-sm leading-relaxed">

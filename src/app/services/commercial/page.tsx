@@ -16,9 +16,9 @@ export default function CommercialPage() {
   return (
     <main>
       {/* Hero */}
-      <section className="bg-gradient-to-b from-navy-900 to-navy-800 text-white py-20 sm:py-28">
+      <section className="bg-gradient-to-b from-dark-900 to-dark-800 text-white py-20 sm:py-28">
         <div className="max-w-6xl mx-auto px-4 text-center">
-          <p className="text-gold-400 font-semibold mb-3 uppercase tracking-wide text-sm">
+          <p className="text-red-500 font-semibold mb-3 uppercase tracking-wide text-sm">
             Our Services
           </p>
           <h1 className="text-4xl sm:text-5xl font-bold mb-6">
@@ -37,7 +37,7 @@ export default function CommercialPage() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
-              <h2 className="text-3xl font-bold text-navy-900 mb-6">
+              <h2 className="text-3xl font-bold text-dark-900 mb-6">
                 Commercial Construction You Can Count On
               </h2>
               <p className="text-slate-600 mb-6 leading-relaxed">
@@ -50,46 +50,46 @@ export default function CommercialPage() {
                 means lost revenue, so we work efficiently to get your doors
                 open on schedule.
               </p>
-              <h3 className="text-xl font-bold text-navy-900 mb-4">
+              <h3 className="text-xl font-bold text-dark-900 mb-4">
                 What Our Commercial Services Include
               </h3>
               <ul className="space-y-3 text-slate-600 mb-8">
                 <li className="flex items-start gap-3">
-                  <span className="text-gold-500 mt-1 font-bold">&#10003;</span>
+                  <span className="text-red-600 mt-1 font-bold">&#10003;</span>
                   Tenant improvement (TI) buildouts
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-gold-500 mt-1 font-bold">&#10003;</span>
+                  <span className="text-red-600 mt-1 font-bold">&#10003;</span>
                   Office renovations and space reconfiguration
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-gold-500 mt-1 font-bold">&#10003;</span>
+                  <span className="text-red-600 mt-1 font-bold">&#10003;</span>
                   Restaurant and hospitality construction
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-gold-500 mt-1 font-bold">&#10003;</span>
+                  <span className="text-red-600 mt-1 font-bold">&#10003;</span>
                   Retail storefront buildouts and remodels
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-gold-500 mt-1 font-bold">&#10003;</span>
+                  <span className="text-red-600 mt-1 font-bold">&#10003;</span>
                   ADA compliance upgrades and accessibility modifications
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-gold-500 mt-1 font-bold">&#10003;</span>
+                  <span className="text-red-600 mt-1 font-bold">&#10003;</span>
                   Commercial bathroom and break room renovations
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-gold-500 mt-1 font-bold">&#10003;</span>
+                  <span className="text-red-600 mt-1 font-bold">&#10003;</span>
                   Flooring, painting, and finish carpentry
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-gold-500 mt-1 font-bold">&#10003;</span>
+                  <span className="text-red-600 mt-1 font-bold">&#10003;</span>
                   Permitting coordination with Clark County and City of Las
                   Vegas
                 </li>
               </ul>
 
-              <h3 className="text-xl font-bold text-navy-900 mb-4">
+              <h3 className="text-xl font-bold text-dark-900 mb-4">
                 Why Choose {COMPANY.shortName}?
               </h3>
               <p className="text-slate-600 leading-relaxed">
@@ -103,10 +103,10 @@ export default function CommercialPage() {
             </div>
 
             <div className="space-y-6">
-              <div className="aspect-[4/3] bg-gradient-to-br from-navy-700 to-navy-900 flex items-center justify-center rounded-lg">
+              <div className="aspect-[4/3] bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center rounded-lg">
                 <span className="text-slate-400 text-sm">Project Photo</span>
               </div>
-              <div className="aspect-[4/3] bg-gradient-to-br from-navy-700 to-navy-900 flex items-center justify-center rounded-lg">
+              <div className="aspect-[4/3] bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center rounded-lg">
                 <span className="text-slate-400 text-sm">Project Photo</span>
               </div>
             </div>
@@ -117,7 +117,7 @@ export default function CommercialPage() {
       {/* Related Services */}
       <section className="py-16 sm:py-20 bg-slate-100">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-2xl font-bold text-navy-900 mb-8 text-center">
+          <h2 className="text-2xl font-bold text-dark-900 mb-8 text-center">
             Related Services
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
@@ -125,12 +125,12 @@ export default function CommercialPage() {
               <Link
                 key={service.slug}
                 href={`/services/${service.slug}`}
-                className="group block bg-white rounded-lg p-6 hover:shadow-lg transition-shadow border border-slate-200 hover:border-gold-500"
+                className="group block bg-white rounded-lg p-6 hover:shadow-lg transition-shadow border border-slate-200 hover:border-red-600"
               >
                 <span className="text-3xl block mb-3" aria-hidden="true">
                   {service.icon}
                 </span>
-                <h3 className="text-lg font-bold text-navy-900 group-hover:text-gold-500 transition-colors mb-2">
+                <h3 className="text-lg font-bold text-dark-900 group-hover:text-red-600 transition-colors mb-2">
                   {service.title}
                 </h3>
                 <p className="text-slate-600 text-sm">{service.description}</p>
