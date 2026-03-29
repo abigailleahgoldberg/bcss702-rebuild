@@ -596,6 +596,72 @@
       justify-content: center;
     }
 
+
+    /* MEGA DROPDOWN */
+    .nav-links .has-dropdown { position: relative; }
+    .nav-links .has-dropdown > a::after { content: '\25BE'; margin-left: 4px; font-size: 10px; opacity: 0.5; }
+    .mega-dropdown {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%) translateY(16px);
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 24px 64px rgba(0,0,0,0.15);
+      border: 1px solid rgba(0,0,0,0.08);
+      padding: 32px;
+      display: grid;
+      grid-template-columns: repeat(4, 190px);
+      gap: 8px 28px;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.2s, visibility 0.2s, transform 0.2s;
+      z-index: 100;
+    }
+    .nav-links .has-dropdown:hover .mega-dropdown {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(-50%) translateY(8px);
+    }
+    .mega-dropdown::before {
+      content: '';
+      position: absolute;
+      top: -12px;
+      left: 0;
+      right: 0;
+      height: 12px;
+    }
+    .mega-col { display: flex; flex-direction: column; }
+    .mega-cat {
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--red);
+      padding: 8px 0 6px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      margin-bottom: 4px;
+    }
+    .mega-dropdown .mega-col a {
+      display: block;
+      padding: 5px 0;
+      font-size: 13px;
+      font-weight: 500;
+      color: #333 !important;
+      text-decoration: none;
+      background: none !important;
+      border-radius: 0 !important;
+    }
+    .mega-dropdown .mega-col a:hover { color: var(--red) !important; }
+    .mega-footer {
+      grid-column: 1 / -1;
+      border-top: 1px solid rgba(0,0,0,0.06);
+      margin-top: 8px;
+      padding-top: 12px;
+      text-align: center;
+    }
+    .mega-footer a { font-weight: 700 !important; color: var(--red) !important; }
+
     /* ─── WHY US ─── */
     .why-us { background: var(--dark); }
     .why-us .section-title { color: var(--white); }
@@ -993,7 +1059,50 @@
         </div>
       </a>
       <ul class="nav-links">
-        <li><a href="#services">Services</a></li>
+        <li class="has-dropdown">
+          <a href="#services">Services</a>
+          <div class="mega-dropdown">
+            <div class="mega-col">
+              <div class="mega-cat">Remodeling</div>
+              <a href="#services">Kitchen Remodeling</a>
+              <a href="#services">Bathroom Remodeling</a>
+              <a href="#services">Home Remodeling</a>
+              <a href="#services">Commercial Remodeling</a>
+              <a href="#services">Room Additions</a>
+              <a href="#services">Outdoor Living Spaces</a>
+            </div>
+            <div class="mega-col">
+              <div class="mega-cat">Construction</div>
+              <a href="#services">General Contracting</a>
+              <a href="#services">New Home Construction</a>
+              <a href="#services">Custom Home Builders</a>
+              <a href="#services">Design-Build</a>
+              <a href="#services">Countertop Installation</a>
+              <a href="#services">Kitchen Flooring</a>
+            </div>
+            <div class="mega-col">
+              <div class="mega-cat">Commercial</div>
+              <a href="#services">Tenant Improvements</a>
+              <a href="#services">Office Build-Outs</a>
+              <a href="#services">Retail &amp; Restaurant</a>
+              <a href="#services">Medical Facility</a>
+              <a href="#services">Commercial Maintenance</a>
+              <a href="#services">Property Maintenance</a>
+            </div>
+            <div class="mega-col">
+              <div class="mega-cat">Plumbing &amp; Specialty</div>
+              <a href="#services">Water Line Repairs</a>
+              <a href="#services">Drain Cleaning</a>
+              <a href="#services">Sewer Line Services</a>
+              <a href="#services">Leak Detection</a>
+              <a href="#services">Water Heater Services</a>
+              <a href="#services">Water Damage Restoration</a>
+            </div>
+            <div class="mega-footer">
+              <a href="#services">View All 37 Services &rarr;</a>
+            </div>
+          </div>
+        </li>
         <li><a href="#about">About</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#reviews">Reviews</a></li>
